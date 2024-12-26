@@ -1,0 +1,48 @@
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(0deg, #dbd0c8, #F5EFE7);
+  border: 2px solid #6482AD;
+  min-height: 100vh;
+}
+.to-do-app {
+  padding-top: 50px;
+}
+.to-do-app h1 {
+  color: #6482AD;
+  margin-top: -30px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 40px;
+  position: relative;
+}
+.to-do-app h1::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: #6482AD;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.to-do-app h1::after {
+  content: '';
+  position: absolute;
+  background-color: #6482AD;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -17px;
+}
+.to-do-app h3 {
+  text-align: left;
+  padding-left: 10px;
+  margin-top: -30px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  color: #001A6E;
+}

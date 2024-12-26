@@ -1,0 +1,8 @@
+.items {
+    min-height: auto;
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

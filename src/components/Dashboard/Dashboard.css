@@ -1,0 +1,19 @@
+.data {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.data div {
+    background-color: #7FA1C3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    box-shadow: 2px 3px 0px 1px #7FA1C3;
+    border-radius: 5px;
+}
+.data div span {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #F5EDED;
+}
