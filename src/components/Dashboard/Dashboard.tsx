@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { ITodoItem } from "../../types"
 import './Dashboard.css'
 interface IProps{
@@ -5,8 +6,13 @@ interface IProps{
 }
 
 const Dashboard = (props: IProps) => {
-    const urgents = props.items.filter(item => item.isUrgent).length;
-    const completed = props.items.filter(item => item.isDone).length;
+    const urgents = useMemo(() => {
+        return props.items.filter(item => item.isUrgent).length;
+    }, [props.items])
+
+    const completed = useMemo(() => {
+        return props.items.filter(item => item.isDone).length;
+    }, [props.items])
     return (
         <div className="data">
         <div>Created Tasks: <span>{props.items.length}</span></div>
